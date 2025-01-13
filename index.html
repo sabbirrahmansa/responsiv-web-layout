@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsiv-web-layout</title>
+    <title>Document</title>
+    <style>
+        .div-containetr{
+            
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3 ,1fr);
+            gap: 20px;
+            row-gap: 20px;
+            margin: 0px auto;
+
+        }
+        .sabbir{
+            width: 200px;
+            
+            /* grid-template-rows: repeat(3,1fr); */
+        }
+        @media screen and (max-width: 576px) {
+            .div-containetr{
+                grid-template-columns: repeat(1,1fr);
+               
+            }
+            
+        }
+        @media screen and (min-width: 576px) and (max-width: 850px) {
+            .div-containetr{
+                grid-template-columns: repeat(2,1fr);
+                
+            }
+            
+        }
+    </style>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
-    
+    <div class="div-containetr">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+        <img class="sabbir" src="sabbir.jpg" alt="">
+    </div>
 </body>
 </html>
